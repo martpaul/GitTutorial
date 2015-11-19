@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">	
+	<title>Portfolio</title>
+	<link rel = "stylesheet" href = "./static//default.css">
+	<link rel = "stylesheet" href = "./static/css/bootstrap.css">
+	<link rel = "stylesheet" href = "./static/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<header>
+		<div class = "nav">
+			<div class = "nav-menu">
+				<a href = "./about" class = "menu-item">ABOUT</a>
+				<a href = "./process" id = "active" class = "menu-item">PROCESS</a>
+				<a id = "logo" href = "./home" class = "menu-item img-responsive"> <img src = "./static/img/name_sub.svg" alt = "Paul Martino"></a>
+				<a href = "./work" class = "menu-item">WORK</a>
+				<a href = "./contact" class = "menu-item">CONTACT</a>
+			</div>
+		</div> <!--CLOSE CLASS = "NAV"-->
+
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      	</button>
+      				<a class="navbar-brand" href="#">PAUL MARTINO</a>
+    			</div>
+
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<ul class="nav navbar-nav">
+        				<li><a href="./home.html">HOME</a></li>
+			        	<li><a href = "./about.html">ABOUT</a></li>
+						<li class="active"><a href = "./process.html">PROCESS<span class="sr-only">(current)</span></a></li>
+			        	<li><a href = "./work.html">WORK</a></li>
+						<li><a href = "./contact.html">CONTACT</a></li>
+			    	</ul>
+    			</div><!-- /.navbar-collapse -->
+  			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<div class = "jumbotron">
+		<div class = "container">
+				
+			<div class = "col-xs-12 col-md-11 col-lg-11">
+				<div class = "container-toggle">
+					<div class = "toggle0"> 
+						<p>The most important of design is not just the final product but each and every step that goes along  with it. From sketching to brainstorming to research to of course design, it's key to iterate through each to produce a better product. </p>
+					</div>
+					<div class = "toggle1"> 
+						<h3>BRAINSTORM</h3>
+						<p>
+							There are better things in life than sitting in a room and throwing ideas on a white board. Before every project it's important to generate every possability from every viewpoint. By working with other designers, users, friends, etc. nearly every persceptive can be dervived. 
+						</p> 
+					</div>
+					<div class = "toggle2"> 
+						<h3>SKETCH</h3>
+						<p>
+							I am a cronic doodler. Anywhere there's a white space and time I am drawing out something. Either the next great idea, the future of interfaces, or a demon filled dungeon to send my DnD group through I am generating ideas from brainstorms to papers.
+						</p> 
+					</div>
+					<div class = "toggle3"> 
+						<h3>RESEARCH</h3>
+						<p>
+							 Numbers have been my main focus for a while. From working with the National Science Foundation to the NYC Metropolitan Transit Service my research experience is far reaching. I understand the importance of numbers and effectivly using them to tell a story. 
+						</p> 
+					</div>
+					<div class = "toggle4"> 
+						<h3>DESIGN</h3>
+						<p>
+							Design is not just the cummulation of the process but is done at every step of the way. From finetuning the kerning of a font, picking the right hue, or removing all chart junk it's the little details that count.   
+						</p> 
+					</div>	
+				</div>	
+			</div>
+
+			<div class = "col-xs-12 col-md-1 col-lg-1">
+				<div class = "proc-links">
+					<ul class = "menu">
+						<li class ="toggle1">1</li>
+						<li class ="toggle2">2</li>
+						<li class ="toggle3">3</li>
+						<li class ="toggle4">4</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class = "footer-container">
+			<ul>
+				<li><a href = "mailto:martpaul@umich.edu?Subject=Good%20Day"><i class="fa fa-envelope fa-2x"></i></a></li>
+				<li><a href = "https://twitter.com/paul_mar"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+				<li>Copyright: Paul Martino 2015</li>
+				<li><a href = "https://instagram.com/paul_mar/"><i class="fa fa-instagram fa-2x"></i></a></li>
+				<li><a href = "https://www.linkedin.com/pub/paul-martino/7/1b8/4a2"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>		
+		</div>
+	</footer>
+
+		<script type="text/javascript">
+
+		console.log('HEAR YE! HEAR YE! IM STARTING SOME JS!');
+
+		var menu_elements = document.querySelectorAll('.menu>li'), menu_length = menu_elements.length;
+
+		console.log(menu_elements);
+		console.log(menu_length);
+
+		for (var i = 0; i < menu_length; i++){
+			menu_elements[i].addEventListener('click', function (e) {
+				console.log('click');
+				var target = document.querySelector('.container-toggle>.' + e.target.classList[0]);
+				Array.prototype.filter.call(target.parentNode.children, function (siblings) {
+					siblings.style.display = 'none';
+				});
+				target.style.display = 'block';
+			});
+		}
+
+	</script>
+
+	<script src = "./static/js/jquery-2.1.4.min.js"></script>
+	<script src = "./static/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!--<ul>
+					<li><a href = "#">contact</a></li>
+					<li><a href = "#">twitter</a></li>
+					<li><a href = "#">instagram</a></li>
+					<li><a href = "#">linkedin</a></li>
+				</ul>-->

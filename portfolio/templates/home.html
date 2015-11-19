@@ -1,0 +1,121 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset = "UTF-8">	
+		<title>Portfolio</title>
+		<link rel = "stylesheet" href = "./static/css/default.css">
+		<link rel = "stylesheet" href = "./static/css/bootstrap.css">
+		<link rel = "stylesheet" href = "./static/css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<meta name = "viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+
+		<header>
+			<div class = "nav">
+				<div class = "nav-menu">
+					<a href = "./about" class = "menu-item">ABOUT</a>
+					<a href = "./process" class = "menu-item">PROCESS</a>
+					<a id = "logo" href = "./home" class = "menu-item img-responsive"> <img src = "./static/img/name_sub.svg" alt = "Paul Martino"></a>
+					<a href = "./work" class = "menu-item">WORK</a>
+					<a href = "./contact" class = "menu-item">CONTACT</a>
+				</div>
+			</div> <!--CLOSE CLASS = "NAV"-->
+
+			<nav class="navbar navbar-default">
+	  			<div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      	</button>
+	      				<a class="navbar-brand" href="#">PAUL MARTINO</a>
+	    			</div>
+
+	    		<!-- Collect the nav links, forms, and other content for toggling -->
+	    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      				<ul class="nav navbar-nav">
+	        				<li class="active"><a href="./home.html">HOME <span class="sr-only">(current)</span></a></li>
+				        	<li><a href = "./about.html">ABOUT</a></li>
+							<li><a href = "./process.html">PROCESS</a></li>
+				        	<li><a href = "./work.html">WORK</a></li>
+							<li><a href = "./contact.html">CONTACT</a></li>
+				    	</ul>
+	    			</div><!-- /.navbar-collapse -->
+	  			</div><!-- /.container-fluid -->
+			</nav>
+
+		</header>
+
+		
+
+		<div class = "jumbotron">
+			<div class = "container">
+
+				<h2>Good day! My name is</h2>
+				<h1 id = "home-name">PAUL MARTINO</h1>
+				<h2 id = "rand-love">and I LOVE Random Lists</h2>
+
+					<div class = "col-xs-12 col-md-6">
+						<h3> _____ </h3>
+						<h3> WHO I AM </h3>
+						<p>
+							I am a statistican turned interaction designer. I have spent the last eight years in New York City where I became an air guitar and Skeeball champion but now reside in Ann Arbor. I have a passion for simple design, clean graphs, and complex but intuitive interfaces. I really HATE pie charts.
+							<br><br>
+							Outside of work I am either watching sports, headbanging at a show, or combating artifical intelligence in a game of life or death (aka playing video games).
+						</p>
+					</div>
+					<div class = "col-xs-12 col-md-6">
+						<h3> _____</h3>
+						<h3> WHAT I DO</h3>
+						<p>
+							I currently study at the University of Michigan where I am obtaining my Masters in Human Computer Interaction. I am combining my previous skills in data analysis with my love of design to create a two headed beast. Not only is she elegant and fascinating but statistical valid and backed up by extensive research.
+						</p>
+					</div>
+			</div>
+		</div>
+
+	<footer>
+		<div class = "footer-container">
+			<ul>
+				<li><a href = "mailto:martpaul@umich.edu?Subject=Good%20Day"><i class="fa fa-envelope fa-2x"></i></a></li>
+				<li><a href = "https://twitter.com/paul_mar"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+				<li>Copyright: Paul Martino 2015</li>
+				<li><a href = "https://instagram.com/paul_mar/"><i class="fa fa-instagram fa-2x"></i></a></li>
+				<li><a href = "https://www.linkedin.com/pub/paul-martino/7/1b8/4a2"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>		
+		</div>
+	</footer>
+
+		<script>
+			console.log('running some JS');
+			var randnum = Math.floor((Math.random() * 39) + 1);
+			console.log(randnum);
+
+			var interests = [
+			"Folk Black Metal", "Skeeball", "Air Guitar", "Technology", 
+			"Edward Tufte", "the Mets", "Wrestling", "Computers", 
+			"Data", "Visualization", "Interaction Design", "Fonts", 
+			"Differential Equations", "Brainstorming", "Sketching", "LEGOs", 
+			"History", "Sci-Fi", "Space", "Karaoke", 
+			"Video Games", "the Civil War", "Craft Beer", 
+			"Bespoke Suits", "Tie Knots", "Wing-tip Shoes", "Comic Books", 
+			"Heavy Metal Parking Lot", "DooM", "Basketball", "Dungeons & Dragons","BBQ", "Waist Coats", "Multiple Regression", "t-Tests",
+			"Programming", "WireFraming", "ProtoTyping", "Koozies"
+			];
+
+			document.getElementById("rand-love").innerHTML = "And I LOVE " + interests[randnum - 1];
+		</script>
+
+		<script src = "./static/js/jquery-2.1.4.min.js"></script>
+		<script src = "./static/js/bootstrap.min.js"></script>
+
+	</body>
+	</html>
+

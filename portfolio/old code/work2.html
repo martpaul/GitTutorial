@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">	
+	<title>Portfolio</title>
+	<link rel = "stylesheet" href = "./css/default.css">
+	<link rel = "stylesheet" href = "./css/bootstrap.css">
+	<link rel = "stylesheet" href = "./css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+
+	<header>
+		<div class = "nav">
+			<div class = "nav-menu">
+				<a href = "./about.html" class = "menu-item">ABOUT</a>
+				<a href = "./process.html" class = "menu-item">PROCESS</a>
+				<a id = "logo" href = "./home.html" class = "menu-item img-responsive"> <img src = "./img/name_sub.svg" alt = "Paul Martino"></a>
+				<a href = "./work.html" id = "active" class = "menu-item">WORK</a>
+				<a href = "./contact.html" class = "menu-item">CONTACT</a>
+			</div>
+		</div> <!--CLOSE CLASS = "NAV"-->
+
+		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      	</button>
+      				<a class="navbar-brand" href="#">PAUL MARTINO</a>
+    			</div>
+
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<ul class="nav navbar-nav">
+        				<li><a href="#">HOME </a></li>
+			        	<li><a href = "./about.html">ABOUT</a></li>
+						<li><a href = "./process.html">PROCESS</a></li>
+			        	<li class="active"><a href = "./work.html">WORK <span class="sr-only">(current)</span></a></li>
+						<li><a href = "./contact.html">CONTACT</a></li>
+			    	</ul>
+    			</div><!-- /.navbar-collapse -->
+  			</div><!-- /.container-fluid -->
+		</nav>
+
+	<div class = "jumbotron" id = "jumbo-gal">
+		<div class = "row">
+			<div class = "col-xs-6 col-md-3">
+				<a href =  "./img/div_sank.png" class = "thumbnail">
+					<img src="./img/div_sank.png" alt="AMLAW Diversity Sankey Chart">
+				</a>
+			</div>
+			<div class = "col-xs-6 col-md-3">			
+				<a href = "./img/corp_score.png" class = "thumbnail">
+					<img src="./img/corp_score.png" alt="Corporate Scorecard">
+				</a>
+			</div>
+			<div class = "col-xs-6 col-md-3">			
+				<a href = "./img/ECI.png" class = "thumbnail">
+			 		<img src="./img/ECI.png" alt="Economic Confidence Index">
+			 	</a>
+			 </div>
+			 <div class = "col-xs-6 col-md-3">			
+				<a href = "./img/mids.png" class = "thumbnail">
+			 		<img src="./img/mids.png" alt="Midlevels Score Dashboard">
+			 	</a>
+			 </div>
+		</div>
+	</div>
+
+	<footer>
+		<div class = "footer-container">
+			<ul>
+				<li><a href = "#"><i class="fa fa-envelope fa-2x"></i></a></li>
+				<li><a href = "#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+				<li>Copyright: Paul Martino 2015</li>
+				<li><a href = "#"><i class="fa fa-instagram fa-2x"></i></a></li>
+				<li><a href = "#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>		
+		</div>
+	</footer>
+
+	<script src = "./js/jquery-2.1.4.min.js"></script>
+	<script src = "./js/bootstrap.min.js"></script>
+	
+	<script>
+		$('.carousel').carousel()({;
+			interval: 5;
+		)}
+	</script>
+
+</body>
+</html>

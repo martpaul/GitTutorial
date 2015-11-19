@@ -1,0 +1,418 @@
+.nav {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	position: fixed;
+	background-color: #21201C;
+	width: 100%;
+	text-align: center;
+	display: block;
+	z-index: 666;
+}
+
+.nav a.menu-item {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: white;
+	font-weight: 300;
+	font-size: 32px;
+	padding: 10px 30px;
+	display: inline-block;
+	background-color: #21201C;
+}
+
+.nav {
+	vertical-align: middle;
+}
+
+#logo{
+	background-color: #50614E;
+	background-image: url(../img/blank-tile.svg);
+	
+	min-width:21%;
+}
+
+.nav #logo:hover{
+	background-color: #73996A;
+}
+
+.nav #active {
+	color: #73996A;
+}
+
+.nav a.menu-item:link{
+	text-decoration: none;
+} 
+
+.nav a.menu-item:hover{
+	color: #73996A;
+}
+
+.nav li {
+	display: inline;
+}
+
+.jumbotron {
+	padding-bottom: 0;
+	background-color: white;
+}
+
+.jumbotron .container{
+	padding: 100px;
+	width: 100%;
+	background-image: url(../img/BrooklynMap1766opc1.jpg);
+	text-align: center;
+}
+
+.jumbotron p{
+	color: black;
+}
+
+.menu {
+	padding-top: 50px;
+}
+
+.menu > li {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	display: inline-block;
+	font-weight: bold;
+	cursor: pointer;
+	border: 5px solid #21201C;
+	margin: 5px;
+	border-radius: 50%;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+	background-color: #50614E;
+	color: white;
+}
+
+.menu > li:hover {
+	color: #73996A;
+	border-color: #73996A;	
+}
+
+.container-toggle{
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.container-toggle > div {
+	display:none;
+}
+
+.container-toggle > div:first-child {
+	display:block;
+}
+
+.container{
+	text-align: justify;
+}
+
+.container p{
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+#about-text{
+	text-align: left;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.row {
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 100%;
+	background-image: url(../img/BrooklynMap1766opc1.jpg);
+	text-align: center;
+}
+
+.row img{
+	height: 200px;
+	width: 200px;
+}
+
+.work-para p{
+	font-size: 13px;
+}
+
+footer {
+	text-align: center;
+	height: 20px;
+	width: 100%;
+}
+
+footer p {
+	color: #3F3F4C;
+	font-size: 65%
+}
+
+footer li {
+	display: inline;
+	padding: 11px;
+}
+
+footer a {
+	color: #3F3F4C;
+}
+
+footer a:link{
+	text-decoration: none;
+} 
+
+footer a:hover{
+	color: #73996A;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.nav {
+		display: inline-block;
+	}
+
+	.nav a.menu-item {
+		padding: 10px 5px;
+		font-size: 10px;
+		display: none;
+	}
+
+	.navbar-default{
+		background-color: #21201C;
+		margin-bottom: 0px;
+		z-index: 665;
+	}
+	.navbar-default{
+		position: fixed;
+		background-color: #21201c;
+		border-color: #323332;
+		width: 100%;
+	}
+	.navbar-default .navbar-brand {
+	  color: #ffffff;
+	}
+	.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	  color: #73996a;
+	}
+	.navbar-default .navbar-text {
+	  color: #ffffff;
+	}
+	.navbar-default .navbar-nav > li > a {
+	  color: #ffffff;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	  color: #73996a;
+	}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	  color: #73996a;
+	  background-color: #323332;
+	}
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	  color: #73996a;
+	  background-color: #323332;
+	}
+	.navbar-default .navbar-toggle {
+	  border-color: #323332;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	  background-color: #323332;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	  background-color: #ffffff;
+	}
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+	  border-color: #ffffff;
+	}
+	.navbar-default .navbar-link {
+	  color: #ffffff;
+	}
+	.navbar-default .navbar-link:hover {
+	  color: #73996a;
+	}
+
+	.navbar-brand a{
+		color: white;
+	}
+
+	#logo{
+		display: none;
+	}
+
+	.jumbotron{
+		padding-top: 50px;
+	}
+
+	.jumbotron h1 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 4em;	
+		padding-left: 0px;
+	}
+
+	.jumbotron h2 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.jumbotron h3 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.col-xs-12 h1 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+	}
+
+	.container-toggle h3{
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+	.jumbotron p {
+		font-size: 20px;
+		display: inline-block;
+		padding-top: 0;
+	}
+
+	.jumbotron .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	#menu{
+		padding-left: 50px;
+	}
+
+	.jumbotron .container{
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		vertical-align: middle;
+	}
+
+	.container-toggle{
+		width: 100%;
+		padding: 0;
+	}
+
+	.footer-container{
+		font-size: 9px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.navbar{
+		display: none;
+	}
+
+	.nav a.menu-item {
+		font-size: 16px;
+	}
+
+	.nav {
+		position: fixed;
+		background: #21201C;
+		width: 100%;
+	}
+
+	.jumbotron .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.jumbotron h1 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 5em;	
+		padding-left: 0px;
+	}
+
+	.jumbotron h2 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.jumbotron h3 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.col-xs-12 h1 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+	}
+
+	.container-toggle h3{
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.container-toggle{
+		width: 100%;
+		padding: 0;
+	}
+
+	.menu {
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	
+	.navbar{
+		display: none;
+	}
+
+	.nav {
+		position: fixed;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.nav a.menu-item {
+		font-size: 32px;
+	}
+
+	.jumbotron .container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+
+	.jumbotron h1 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 7em;	
+		padding-left: 0px;
+	}
+
+	.jumbotron h2 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.jumbotron h3 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.container-toggle h3{
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+
+	.row{
+		padding-top: 50px;
+	}
+
+	.toggle1 h3{
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;		
+	}
+
+	.row h2 {
+		font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+		font-size: 3em;	
+	}
+	.menu {
+		padding-left: 25%;
+		padding-right: 20%;
+	}	
+}

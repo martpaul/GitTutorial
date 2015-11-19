@@ -1,0 +1,200 @@
+
+.nav {
+	font-family: 'Lateef', Arial;
+	padding-top: 10px;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+}
+
+.nav a.menu-item {
+	color: #3F3F4C;
+	padding-right: 45px;
+	font-weight: 500;
+	font-size: 1em;
+	padding: 10px 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+.container {
+	padding: 0px;
+}
+
+.nav #active {
+	color: red;
+}
+
+.nav a.menu-item:link{
+	text-decoration: none;
+} 
+
+.nav a.menu-item:hover{
+	color: #FF6600;
+}
+
+.nav li {
+	display: inline;
+}
+
+.jumbotron {
+	padding: 0;
+	background-color: white;
+	width: 100%;
+}
+
+.menu > li {
+	font-family: 'Lateef', cursive;
+	display: inline-block;
+	font-weight: bold;
+	cursor: pointer;
+	border: 5px solid #3F3F4C;
+	margin: 5px;
+	border-radius: 50%;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+}
+
+.menu > li:hover {
+	color: #FF6600;
+	border-color: #FF6600;	
+}
+
+.container-toggle{
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.container-toggle > div {
+	display:none;
+}
+
+.container-toggle > div:first-child {
+	display:block;
+}
+
+.footer {
+	text-align: center;
+	height: 20px;
+	width: 100%;
+}
+
+.footer p {
+	color: #3F3F4C;
+	font-size: 65%
+}
+
+.footer li {
+	display: inline;
+	padding: 11px;
+}
+
+.footer a {
+	color: #3F3F4C;
+}
+
+.footer a:link{
+	text-decoration: none;
+} 
+
+.footer a:hover{
+	color: #FF6600;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.header {
+		padding-top: 175px;
+		padding-bottom: 75px;
+		background-image: url(../img/BrooklynMap1766small.jpg);
+	}
+
+	.nav a.menu-item {
+		color: #3F3F4C;
+		font-size: .75em;
+		padding: 10px 5px;
+	}
+
+	.nav a.menu-logo {
+		color: #3F3F4C;
+		font-size: .75em;
+		padding: 10px 5px;
+	}
+
+
+	.jumbotron h1 {
+		font-family: 'Lateef', Arial;
+		font-style: 500;
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+
+	.jumbotron p {
+		font-size: 5em;
+	}
+	.menu {
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		padding-top: 150px;
+		padding-bottom: 150px;
+		background-image: url(../img/BrooklynMap1766med.jpg);
+	}
+
+	.nav {
+		padding-top: 75px;
+		position: fixed;
+		background: white;
+		width: 100%;
+	}
+
+	.jumbotron h1 {
+		font-family: 'Lateef', Arial;
+		font-style: 500;
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+
+	.menu {
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+	.nav {
+		padding-top: 75px;
+		position: relative;
+		background-image: url(../img/BrooklynMap1766.jpg);
+		width: 100%;
+		
+	}
+
+	.header {
+		padding-top: 175px;
+		padding-bottom: 175px;
+	}
+
+
+	.jumbotron h1 {
+		font-family: 'Lateef', Arial;	
+		font-style: 500;
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+
+	.menu {
+		padding-left: 25%;
+		padding-right: 20%;
+	}
+
+	.	
+}
