@@ -29,4 +29,4 @@ def work():
 	return render_template("work.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)		#debug=True is optional
+    app.run(debug=True, port = 6900)		#debug=True is optional
